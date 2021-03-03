@@ -3,50 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="style\style.css">
-    <title>CV</title>
+    <link rel="stylesheet" href="style/style.css">
+    <title>HTML, CSS & Git Basics</title>
 </head>
 <body>
-<header>
-    <div class="photo">
-        <img src="image/cat.jpg" alt="Photo" width="250" height="170">
+<main class="resume">
+    <aside class="contactInfo">
+        <figure>
+            <img class="avatar" src="assets/image/cat.jpg" alt="avatar"/>
+        </figure>
+        <h1 class="name">Eugenia Bortnouskaya</h1>
+        <ul class="socialMedia">
+            <li class="item">
+                <a href="https://t.me/gienie17" class="socialMedia__link"> <img src="assets/icon/telegram.svg"
+                                                                                alt="telegram"/>
+                </a>
+            </li>
+            <li class="item"><a href="https://github.com/JennyBortnouskaya" class="resume__link"> <img
+                    src="assets/icon/github.svg" alt="github"/></a>
+            </li>
+        </ul>
+        <ul class="adInfo">
+            <li class="item">
+                <img src="assets/icon/mail.svg" alt="mail"/> jenny.b17@mail.ru
+            </li>
+            <li class="item">
+                <img src="assets/icon/phone.svg" alt="phone"/>+375 44 7996179
+            </li>
+        </ul>
+    </aside>
+    <span class="separatorLine"></span>
+    <div class="mainContent">
+        <article class="aboutMe">
+            <h3 class="aboutMe__title">About me</h3>
+            <p class="aboutMe__description">
+                My primary goal is to apply my technical expertise all throughout the full software life cycle to
+                ensure production and delivery of products and services that meet client specifications. My experience
+                as junior software developer enhanced my abilities in designing, implementing, testing, and upgrading
+                software. One of my objectives is to keep updated with the latest IT trends and technologies. I am
+                confident that if given the opportunity, I can be a useful talent to the company.
+            </p>
+        </article>
+        <article class="skills">
+            <h3 class="skills__title">Skills</h3>
+            <ul class="resume__skills-wrapper">
+                <li class="skill">HTML</li>
+                <li class="skill">CSS</li>
+                <li class="skill">JavaScript</li>
+                <li class="skill">Git</li>
+                <li class="skill">SCSS</li>
+                <li class="skill">Less</li>
+                <li class="skill">BEM</li>
+                <li class="skill">PUG</li>
+                <li class="skill">Webpack</li>
+                <li class="skill">Photoshop</li>
+                <li class="skill">Figma</li>
+            </ul>
+        </article>
+        <article class="education">
+            <h2 class="education__title">Education</h2>
+            <h3 class="education__subtitle"> SIU (Moskow, law department) | 2011 - 2015 </h3>
+        </article>
+
+        <article class="experience">
+            <h3 class="experience__title">Experience</h3>
+            <a href="https://jennybortnouskaya.github.io/Labinvent/" class="experience__link">Labinvent - Training
+                Project.</a>
+            <a href="https://jennybortnouskaya.github.io/Creative-website-template/" class="resume__experience-link">Creative
+                website template - Training Project.</a>
+        </article>
+
+        <article class="languages">
+            <h2 class="languages__title">Languages</h2>
+            <h3 class="languages__subtitle">Russian</h3>
+            <p class="languages__description"> Native</p>
+            <h3 class="languages__subtitle">English</h3>
+            <p class="languages__description"> C1 - Advanced</p>
+            <h3 class="languages__subtitle">German</h3>
+            <p class="languages__description"> B2 - Upper Intermediate</p>
+        </article>
     </div>
-    <div class="info">
-        <h1>Eugienia Bortnouskaya</h1>
-        <h2>Contacts:</h2>
-        <p>jenny.b17@mail.ru</p>
-        <p> +375447996179</p>
-    </div>
-</header>
-<main>
-    <h2>Summary:</h2>
-    <p>My primary goal is to apply my technical expertise all throughout the full software life cycle to ensure production and delivery of products and services that meet client specifications. My experience as junior software developer enhanced my abilities in designing, implementing, testing, and upgrading software. One of my objectives is to keep updated with the latest IT trends and technologies. I am confident that if given the opportunity, I can be a useful talent to the company.</p>
-
-    <h2>Skills:</h2>
-    <ul>
-        <p>Knowledge of:</p>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Application architecture principals</li>
-    </ul>
-    <ul>
-        <li>Familiarity with Database design and development</li>
-        <li>Ability to develop Graphical User Interfaces</li>
-        <li>Ability to develop data structures and algorithms</li>
-    </ul>
-
-
-    <h2>Education:</h2>
-    <p>MSIU (Moskow, law department)</p>
-
-
-    <h2>Foreign languages:</h2>
-    <h3>English</h3>
-    <p>Level: B2</p>
-
-    <h3>German</h3>
-    <p>Level: B2</p>
 </main>
+<footer class="footer">
+    <div class="footer__content">
+        <p class="footer__text">CV for RSS</p>
+        <a href="https://docs.rs.school/#/">
+            <figure class="rss">
+                <img src="https://app.rs.school/static/images/logo-rsschool3.png" alt="RSSlogo"/></figure>
+        </a>
+        <p class="footer__text">Copyright © EvgeniaBortnouskaya 2021</p>
+    </div>
+</footer>
+
 </body>
 </html>
+
